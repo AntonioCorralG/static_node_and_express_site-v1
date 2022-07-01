@@ -3,28 +3,22 @@ const router = express.Router();
 const app = express();
 const { projects } = require ("./data.json")
 
-
+//sets up the view engine to pug
 app.set('view engine', 'pug');
+//serves items from the public folder
 app.use('/static', express.static('public'));
-//const mainRoutes = require('./routes');
 
-/*
-Set your routes. You'll need:
-An "index" route (/) to render the "Home" page with the locals set to data.projects
-An "about" route (/about) to render the "About" page
-Dynamic "project" routes (/project/:id or /projects/:id) 
-based on the id of the project that render a customized version of the Pug
- project template to show off each project. Which means adding data, or "locals", 
- as an object that contains data to be passed to the Pug template.
-*/
+//render the home route
 app.get('/', (req, res, next) => {
     res.render('index', { projects });
 })
 
+//renders the about route
 app.get('/about', (req, res) => {
     res.render('about')
   })
 
+//dynamically renders the project routes to match projects also produces error if route doesn't match a project id
 app.get('/projects/:id', (req, res, next) => {
     const { id } = req.params;
     const project = projects[id];
@@ -38,13 +32,14 @@ app.get('/projects/:id', (req, res, next) => {
     }
 })
 
+//404 error handling 
 app.use((req, res, next) => {
     const err = new Error('Not Found, please try another URL');
     err.status = 404;
     next(err);
   });
   
-
+//global error handling
   app.use((err, req, res) => {
     err.message = err.message || "There was a server error!";
     res.status(err.status || 500);
