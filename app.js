@@ -40,13 +40,6 @@ app.use((err, req, res, next) => {
     next(err);
   });
 
-app.get('*', (req, res, next) => {
-  const err = new Error;
-  // err.status = 500;
-  // err.message = 'Invalid route';
-  next(err)
-})
-  
 //global error handling
   app.use((err, req, res, next) => {
     err.message = err.message || "There was a server error!";
