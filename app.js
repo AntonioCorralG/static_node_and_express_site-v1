@@ -32,19 +32,27 @@ app.get('/projects/:id', (req, res, next) => {
     }
 })
 
+
+
 //404 error handling 
-app.use((req, res, next) => {
-    const err = new Error('Not Found, please try another URL');
+app.use((err, req, res, next) => {
     err.status = 404;
     next(err);
   });
+
+app.get('*', (req, res, next) => {
+  const err = new Error;
+  // err.status = 500;
+  // err.message = 'Invalid route';
+  next(err)
+})
   
 //global error handling
-  app.use((err, req, res) => {
+  app.use((err, req, res, next) => {
     err.message = err.message || "There was a server error!";
-    res.status(err.status || 500);
+    err.status = (err.status || 500);
     console.log(`You have hit a ${err.status} error!`);
-    res.send(`Error Code: ${res.status} : ${err.message}`);
+    res.send(`Error Code: ${err.status} : ${err.message}`);
   });
 
   

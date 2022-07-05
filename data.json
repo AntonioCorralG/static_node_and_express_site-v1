@@ -4,7 +4,7 @@
     "project_name": "Random Quote Generator",
     "description": "A random quote is selected and displayed on the screen using JavaScript",
     "technologies": ["JavaScript", "HTML", "CSS", "Visual Studio Code"],
-    "live_link": "www.livelink.com",
+    "live_link": "https://antoniocorralg.github.io/a_random_quote_generator-v1/",
     "github_link": "https://github.com/AntonioCorralG/a_random_quote_generator-v1",
     "image_urls":["/static/images/project1-snip.png", "/static/images/project1-snip2.png"]
 },
@@ -13,7 +13,7 @@
     "project_name": "Data Pagination and Filtering",
     "description": "This project breaks up an array of 42 student into several pages. The page shows 12 students at a time.",
     "technologies": ["JavaScript", "HTML", "CSS", "Visual Studio Code"],
-    "live_link": "www.livelink.com",
+    "live_link": "https://antoniocorralg.github.io/data-pagination-and-filtering-v1/",
     "github_link": "https://github.com/AntonioCorralG/data-pagination-and-filtering-v1",
     "image_urls":["/static/images/project2-snip1.png", "/static/images/project2-snip2.png", "/static/images/project2-snip3.png", "/static/images/project2-snip4.png"]
 },
@@ -22,7 +22,7 @@
     "project_name": "Interactive Form",
     "description": "This is a form that was created using HTML and JS logic. The submission of the form is only possible when the required elements are correctly filled in.",
     "technologies": ["JavaScript", "HTML", "CSS", "Visual Studio Code"],
-    "live_link": "www.livelink.com",
+    "live_link": "https://antoniocorralg.github.io/interactive-form-v3/",
     "github_link": "https://github.com/AntonioCorralG/interactive-form-v3",
     "image_urls":["/static/images/project3-snip1.png", "/static/images/project3-snip2.png", "/static/images/project3-snip3.png", "/static/images/project3-snip3.png"]
 },
@@ -31,7 +31,7 @@
     "project_name": "Phrase Hunter",
     "description": "This is a game in which the user is given a hidden phrase and are tasked with guessing the correct letters to uncover the hidden phrase. There are 5 lives/mistakes that can be made before the game is over.",
     "technologies": ["JavaScript", "HTML", "CSS", "Visual Studio Code"],
-    "live_link": "www.livelink.com",
+    "live_link": "https://antoniocorralg.github.io/oop_game-v2/",
     "github_link": "https://github.com/AntonioCorralG/oop_game-v2",
     "image_urls":["/static/images/project4-snip1.png", "/static/images/project4-snip2.png", "/static/images/project4-snip3.png", "/static/images/project4-snip4.png"]
 },
@@ -40,7 +40,7 @@
     "project_name": "Employee Directory App",
     "description": "This app used AJAX and Fetch API to pull up 12 random user. With the user info a card was created with their information and a modal was implemented when the user cicks on a users box.",
     "technologies": ["JavaScript", "HTML", "CSS", "Visual Studio Code", "AJAX", "Git"],
-    "live_link": "www.livelink.com",
+    "live_link": "https://antoniocorralg.github.io/student-files/",
     "github_link": "https://github.com/AntonioCorralG/student-files",
     "image_urls":["/static/images/project5-snip1.png", "/static/images/project5-snip2.png", "/static/images/project5-snip4.png", "/static/images/project5-snip5.png"]
 }
