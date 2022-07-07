@@ -35,9 +35,11 @@ app.get('/projects/:id', (req, res, next) => {
 
 
 //404 error handling 
-app.use((err, req, res, next) => {
-    err.status = 404;
-    next(err);
+app.use(( req, res, next) => {
+  const err = new Error;
+  err.status = 404;
+  err.message = `Cannot find the requested webpage`;
+  next(err)
   });
 
 //global error handling
